@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.asc {
+    color: red;
+    display: inline-block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: white;
+    width: 100vw;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+}
+
+header > img{
+    display: inline-block;
+    width: 100px;
+}
+
+header > h1,h2 {
+    display: inline-block;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 3.0em;
+}
+
+header h2 {
+    color: white;
+    font-size: 2em;
+    margin: auto;
+    padding-left: 50px;
+}
+
+.form-section-01 {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.form-section-voltar{
+    width: 150px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.form-section-one{
+    height: 50%;
+    width: 33%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.form-section-two{
+    height: 100%;
+    width: 33%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.form-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-section-one label{
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        padding-bottom: 3px;
+        color: gray;
+}
+
+.form-section-two label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    padding-bottom: 3px;
+    color: gray;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-section-one input,
+.form-section-one input {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 12px;
+    width: calc(100% - 20px);
+}
+
+.form-section-one > select{
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 12px;
+    width: calc(100% - 20px);
+    cursor: pointer;
+}
+
+.form-section-one option{
+    font-size: 1.5em; 
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    transition: background-color 0.3s ease;
+ }
+
+ .form-section-one option:hover {
+    background-color: blue;
+ }
+
+ .form-section-one option:checked {
+    background-color: white;
+ }
+
+.form-section-two input[type="text"],
+.form-section-two input[type="email"] {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 12px;
+    width: calc(100% - 20px);
+}
+
+.form-section input[type="text"]:disabled,
+.form-section input[type="email"]:disabled {
+    background-color: #e9ecef;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.radio-group > p{
+    width: 200px;
+    color: white;
+    display: inline-block;
+}
+
+.radio-group button[type="submit"] {
+    margin-right: 5px;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.radio-group button[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+.radio-group button[type="submit"]:checked{
+    background-color: red;
+}
+
+.radio-group label {
+    margin-right: 20px;
+}
+
+.risk-factors {
+    width: 33%;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    display: block;
+    float: right;
+    background-color: #007bff;
+    border-radius: 20px;
+}
+
+.risk-factors h3 {
+    margin-bottom: 10px;
+}
+
+.risk-factors > div {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.risk-factors label {
+    width: 300px;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.risk-level {
+    margin-top: 20px;
+}
+
+.risk-status {
+    display: inline-block;
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.form-section-voltar > [type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-section-voltar > [type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+    .form-section {
+        width: 100%;
+    }
+}
