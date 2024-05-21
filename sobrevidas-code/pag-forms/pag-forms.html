@@ -16,24 +16,86 @@
         </header>
         <form>
             <div class="form-section-01">
-                <label for="cns-profissional"><strong>CNS DO PROFISSIONAL</strong></label>
-                <input type="text" id="cns-profissional" value="601583012003457" disabled>
+                <table class="infoacs" id="cns">
+                    <tr>
+                        <caption>CNS DO PROFISSIONAL</caption>
+                        <tr>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>7</td>
+                        </tr>
+                    </tr>
+                </table>
 
-                <label for="cbo"><strong>CBO</strong></label>
-                <input type="text" id="cbo" value="3222-55" disabled>
+                <table class="infoacs" id="cbo">
+                    <tr>
+                        <caption>CBO</caption>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td id="hifen">-</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                </table>
 
-                <label for="cnes"><strong>CNES</strong></label>
-                <input type="text" id="cnes" value="3003574" disabled>
+                <table class="infoacs" id="cnes">
+                        <tr>
+                            <caption>CNES</caption>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>4</td>
+                        </tr>
+                </table>
+                        
+                <table class="infoacs" id="ine">
+                        <tr>
+                            <caption>INE</caption>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+                </table>
+                        
+                <table class="infoacs" id="microarea">
+                        <tr>
+                            <caption>MICROÁREA</caption>
+                            <td>02</td>
+                        </tr>
+                </table>
 
-                <label for="ine"><strong>INE</strong></label>
-                <input type="text" id="ine" value="0000005765" disabled>
-
-                <label for="microarea"><strong>MICROÁREA</strong></label>
-                <input type="text" id="microarea" value="02" disabled>
-
-                <label for="data-cadastro"><strong>DATA DO CADASTRO</strong></label>
-                <input type="text" id="data-cadastro" value="10/07/2024" disabled>
+                <table class="infoacs" id="datacadastro">
+                    <tr>
+                        <caption>DATA DO CADASTRO</caption>
+                        <td style="border: none; font-size: 1.23em;">10/07/2024</td>
+                    </tr>
+                </table>
             </div>
+
+            <hr>
 
             <div class="form-section-one">
                 <label for="nome">NOME <div class="asc">*</div></label>
@@ -59,29 +121,30 @@
 
             </div>
             <div class="form-section-two">
-                <label for="email">E-MAIL</label>
-                <input type="email" id="email" value="alexsilvasantos@gmail.com">
+                <label for="isus">CARTÃO DO SUS</label>
+                <input type="text" id="isus" value="alexsilvasantos@gmail.com">
 
 
-                <label for="cep">CEP *</label>
-                <input type="text" id="cep" value="74932580">
+                <label for="itel">TELEFONE <div class="asc">*</div></label>
+                <input type="text" id="itel" value="74932580">
 
-                <label for="bairro">BAIRRO</label>
-                <input type="text" id="bairro" value="Garavelo Residencial Park">
+                <label for="imail">E-MAIL</label>
+                <input type="text" id="imail" value="Garavelo Residencial Park">
 
-                <label for="rua">RUA</label>
-                <input type="text" id="rua" value="37 E">
-
-                <label for="numero">NÚMERO</label>
-                <input type="text" id="numero" value="123">
-
-                <label for="complemento">COMPLEMENTO</label>
-                <input type="text" id="complemento">
+                <div class="form-section-three">
+                        <label for="icep">CEP</label>
+                        <input type="text" id="cep" value="772363">
+                        <label for="ibairro">BAIRRO</label>
+                        <input type="text" id="ibairro" value="123">
+                        
+                        <label for="complemento">COMPLEMENTO</label>
+                        <input type="text" id="complemento">
+                </div>
             </div>
             <div class="form-section risk-factors">
                 <h3>Fatores de Risco para Câncer de Boca</h3>
                 <div>
-                    <label>Homem *</label>
+                    <label>Homem <div class="asc">*</div> &#40consome cigarro regurlamente&#41</label>
                     <div class="radio-group">
                         <p>Marque sim ou não: </p>
                         <button type="submit" id="bts1">SIM</button>
@@ -89,7 +152,7 @@
                     </div>
                 </div>
                 <div>
-                    <label>Etilista <div class="asc">*</div></label>
+                    <label>Etilista <div class="asc">*</div> &#40consome álcool regurlamente&#41</label>
                     <div class="radio-group">
                         <p>Marque sim ou não: </p>
                         <button type="submit" id="bts2">SIM</button>
@@ -97,7 +160,7 @@
                     </div>
                 </div>
                 <div>
-                    <label>Tabagista <div class="asc">*</div></label>
+                    <label>Tabagista <div class="asc">*</div> &#40consome cigarro regurlamente&#41</label>
                     <div class="radio-group">
                         <p>Marque sim ou não: </p>
                         <button type="submit" id="bts3">SIM</button>
@@ -105,7 +168,7 @@
                     </div>
                 </div>
                 <div>
-                    <label>Com lesão bucal suspeita <div>*</div></label>
+                    <label>Com lesão bucal suspeita <div class="asc">*</div></label>
                     <div class="radio-group">
                         <p>Marque sim ou não: </p>
                         <button type="submit" id="bts4">SIM</button>
@@ -113,7 +176,7 @@
                     </div>
                 </div>
                 <div class="risk-level">
-                    <label>Grau de Risco para Câncer de Boca</label>
+                    <label style="width: 300px;margin: auto;margin-bottom: 20px;">Grau de Risco para Câncer de Boca</label>
                     <div class="risk-status">Baixo Risco</div>
                 </div>
             </div>
