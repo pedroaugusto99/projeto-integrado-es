@@ -1,0 +1,103 @@
+@media screen and (max-width: 769px) {
+  
+    body,.container{
+      height: 100%;
+    }
+  
+    body, .container, header {
+        max-width: 100%;
+    }
+  
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 0.8em;
+        padding-left: 10px;
+    }
+
+    header > img {
+        width: 50px;
+    }
+
+    .form-section-01 {
+        max-width: 100%;
+        padding: 0pxpx;
+        font-size: 0.9em;
+        overflow-x: auto;  /* Adicionado para scroll horizontal */
+    }
+
+    .form-section-01 > table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    
+    .form-section-01 > #cns {
+      border-radius: 10px 10px 0px 0px;
+    }
+    
+    .form-section-01 > #cbo {
+    border-radius: 0;
+    width: 140px;
+    }
+
+.form-section-01 > #cnes {
+    border-radius: 0;
+    width: 195px;
+    }
+
+.form-section-01 > #ine {
+    border-radius: 0;
+    }
+
+.form-section-01 > #microarea {
+    border-radius: 0px 0px 0px 10px;
+    width: 190px;
+    }
+
+.form-section-01 > #datacadastro {
+    border-radius: 0px 0px 10px 0px;
+    width: 200px;
+    height: -10px;
+    }
+
+    .form-section-01 > #datacadastro {
+        width: auto;
+    }
+    
+    .form-section-one {
+      float: center;
+      width: 100%;
+    }
+    
+    .form-section-one label {
+      margin-top: 10px;
+    }
+    
+    .form-section-two{
+      float: center;
+      width: 100%;
+    }
+    
+    .form-section-three {
+      display: inline-block;
+    }
+    
+    .form-section-three > #cep {
+      width: 100px;
+    }
+    
+    #ibairro {
+      width: 100px;
+    }
+    
+    .risk-factors {
+      width: 350px;
+      float: center;
+    }
+    
+    .risk-factors label {
+      width: 320px;
+    }
+}
