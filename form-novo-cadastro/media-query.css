@@ -1,0 +1,428 @@
+@media screen and (max-width: 801px) {
+  
+    body,.container{
+      height: 100%;
+    }
+  
+    body, .container, header {
+        max-width: 100%;
+    }
+  
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 0.8em;
+        padding-left: 10px;
+    }
+
+    header > img {
+        width: 50px;
+    }
+
+    .form-section-01 {
+        max-width: 100%;
+        padding: 0pxpx;
+        font-size: 0.9em;
+        overflow-x: auto;  /* Adicionado para scroll horizontal */
+    }
+
+    .form-section-01 > table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    
+    .form-section-01 > #cns {
+      border-radius: 10px 10px 0px 0px;
+    }
+    
+    .form-section-01 > #cbo {
+    border-radius: 0;
+    width: 140px;
+    }
+
+.form-section-01 > #cnes {
+    border-radius: 0;
+    width: 195px;
+    }
+
+.form-section-01 > #ine {
+    border-radius: 0;
+    }
+
+.form-section-01 > #microarea {
+    border-radius: 0px 0px 0px 10px;
+    width: 190px;
+    }
+
+.form-section-01 > #datacadastro {
+    border-radius: 0px 0px 10px 0px;
+    width: 200px;
+    height: -10px;
+    }
+
+    .form-section-01 > #datacadastro {
+        width: auto;
+    }
+    
+    .form-section-one {
+      float: left;
+      width: 50%;
+      margin: auto;
+      height: 50%;
+      padding: 10px;
+      display: grid;
+      font-size: 1em;
+    }
+    
+    .form-section-one label {
+      margin-top: 10px;
+    }
+    
+    .form-section-two{
+      float: right;
+      width: 50%;
+      height: 50%;
+      padding: 10px;
+      display: grid;
+    }
+    
+    .form-section-three {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      float: inline-start;
+    }
+    
+    .form-section-three > #cep {
+      width: 100px;
+    }
+    
+    #ibairro {
+      width: 100px;
+    }
+    
+    .risk-factors {
+      width: 500px;
+      height: 100%;
+      margin: auto;
+      float: unset;
+      display: block;
+    }
+
+    .div-factors > h3 {
+      position: absolute;
+      transform: translateY(60vh);
+    }
+    
+    .risk-factors label {
+      width: 320px;
+    }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1195px) {
+
+  body,.container{
+    width: 1180px;
+    margin: auto;
+    height: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .titulo {
+    margin-top: 10px;
+  }
+
+  .subtitulo {
+    left: 50%;
+    margin-top: 15px;
+  }
+
+  #caixausuario {
+    margin-top: 5px;
+    left: 75%;
+  }
+
+  .caixa {
+    left: 88%;
+  }
+
+  .sinoimg {
+    left: 35%;
+}
+  .sair {
+      transform: translateX(3350%);
+  }
+
+  .form-section-01 {
+    width: 100%;
+    font-size: 0.94em;
+}
+
+.form-section-01 > #datacadastro {
+  border-radius: 0px 10px 10px 0px;
+  width: 197px;
+}
+
+.form-section-one {
+  font-size: 0.8em;
+}
+
+.form-section-two {
+  font-size: 0.8em;
+}
+
+#campo-endereco {
+  font-size: 1.6em; margin-bottom: 0px; margin-top: 20px;
+}
+
+#cep {
+  width: 100px;
+}
+
+#ibairro {
+  width: 250px;
+}
+
+#irua {
+  width: 150px;
+}
+
+#inum {
+  width: 85px;
+}
+
+#icomplemento {
+  width: 115px;
+}
+
+.div-factors > h3 {
+  margin-top: -570px;
+  font-size: 1.2em;
+  padding-right: 40px;
+}
+
+.risk-factors {
+  margin-top: -540px;
+  padding-bottom: 0%;
+}
+
+.risk-factors label{
+  width: 370px;
+}
+
+.radio-group > p {
+  margin-top: 4%;
+}
+
+.botoes {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+
+.risk-level >  label {
+  width: 300px;
+}
+
+.form-section-voltar > [type="submit"] {
+  font-size: 0.9em;
+}
+
+.form-section-obrigatorio {
+  width: 420px;
+  font-size: 0.8em;
+}
+
+.form-section-download {
+  margin-left: 45px;
+  margin-top: 35px;
+}
+
+.form-section-download > img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-section-validar-tel > [type="submit"] {
+  font-size: 0.9em;
+  margin-right: 40px;
+  margin-left: 15px;
+}
+
+.form-section-confirmar > [type="submit"] {
+  font-size: 0.9em;
+}
+
+}
+
+@media screen and (max-width: 1025px) {
+    body,.container{
+      width: 1024px;
+      margin: auto;
+      height: 100%;
+    }
+  
+    header {
+      width: 100%;
+      margin: auto;
+    }
+    .titulo {
+      font-size: 4vh;
+      margin-top: 15px;
+    }
+  
+    .subtitulo {
+      left: 45%;
+      font-size: 3vh;
+      margin-top: 20px;
+    }
+  
+    #caixausuario {
+      left: 75%;
+      margin-top: 5px;
+    }
+
+    .usuario {
+      font-size: 2vh;
+      width: 25px;
+    height: 25px;
+    }
+  
+    .caixa {
+      left: 78%;
+      font-size: 2vh;
+    }
+  
+    .sinoimg {
+      left: 60%;
+      width: 28px;
+  }
+    .sair {
+        transform: translateX(2850%);
+    }
+  
+    .form-section-01 {
+      width: 100%;
+      font-size: 0.709em;
+  }
+  
+  .form-section-01 > #datacadastro {
+    border-radius: 0px 10px 10px 0px;
+    width: 148px;
+  }
+  
+  .form-section-one {
+    font-size: 0.7em;
+  }
+  
+  .form-section-two {
+    font-size: 0.7em;
+  }
+  
+  #campo-endereco {
+    font-size: 1.45em; margin-bottom: 0px; margin-top: 20px;
+  }
+  
+  #cep {
+    width: 100px;
+  }
+  
+  #ibairro {
+    width: 200px;
+  }
+  
+  #irua {
+    width: 125px;
+  }
+  
+  #inum {
+    width: 75px;
+  }
+  
+  #icomplemento {
+    width: 105px;
+  }
+  
+  .div-factors > h3 {
+    margin-top: -555px;
+    font-size: 1em;
+    padding-right: 40px;
+  }
+  
+  .risk-factors {
+    margin-top: -530px;
+    padding-bottom: 1.25%;
+    left: 10px;
+  }
+  
+  .risk-factors label{
+    font-size: 0.8em;
+    width: 310px;
+  }
+
+  .radio-group > p {
+    font-size: 0.9em;
+    margin-top: 4%;
+  }
+  
+  .botoes {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .risk-level >  label {
+    width: 240px;
+  }
+  
+  .form-section-voltar > [type="submit"] {
+    font-size: 0.8em;
+  }
+  
+  .form-section-obrigatorio {
+    width: 380px;
+    font-size: 0.7em;
+    margin-left: 25px;
+  }
+  
+  .form-section-download {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 15px;
+  }
+  
+  .form-section-download > img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .form-section-validar-tel > [type="submit"] {
+    font-size: 0.8em;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .form-section-confirmar > [type="submit"] {
+    font-size: 0.8em;
+    margin-left: 20px;
+  }
+  
+  .label1{
+    left: 8vw;
+  }
+
+  .label1 span{
+    width: 5vw;
+  }
+
+  .label2 span{
+    width: 5vw;
+  }
+
+
+  }
