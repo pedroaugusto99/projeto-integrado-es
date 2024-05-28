@@ -437,33 +437,34 @@
 
     .container {
     max-width: 75vw;
+    height: 102%;
     margin: auto;
     }
 
     header {
+      display: flex;
       text-align: center;
       padding: 10px;
-
+      align-items: center;
     }
 
     .posicionar {
-      width: 50px;
-      height: 50px;
       top: 5vh;
+      right: 2px;
     }
 
     .titulo {
-      left: 17vw;
-      margin-top: -3px;
+      left: 19vw;
     }
 
     .subtitulo {
       margin-top: 5pt;
-      left: 45vw;
+      left: 47vw;
+      font-size: 1.6em;
     }
 
     #caixausuario {
-      left: 65vw;
+      left: 67vw;
       margin-top: 2px;
     }
 
@@ -474,19 +475,32 @@
     }
   
     .caixa {
-      left: 87%;
       font-size: 3vh;
+      margin-left: 4px;
     }
   
     .sinoimg {
-      left: 160%;
-      width: 28px;
+      width: 32px;
+      margin-left: 11px;
+      margin-top: 4px;
     }
     .sair {
-        transform: translateX(3850%);
+        transform: translateX(3750%);
+    }
+
+    .form-section-01 {
+        margin-top: -2px;
     }
 
     .botoes {
-      margin-top: -40px;
+      margin-top: -30px;
     }
+
+    .form-section-validar-tel > [type="submit"] {
+        margin-right: 62px;
+        margin-left: 17px;
+      }
+
+    .form-section-confirmar > [type="submit"] {
+      }
   }
