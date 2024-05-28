@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBREVIDAS - ACS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagens/logo.png" alt="Logo Sobrevidas" class="posicionar">
+            <h1 class="titulo">SOBREVIDAS - ACS</h1>
+            <h2 class="subtitulo">PACIENTE Anderson - Médio Risco</h2>
+            <div id="caixausuario">
+                <p class="usuario">U</p>
+                <p class="caixa">Usuário</p>
+                <a href="#"><img src="imagens/sino.png" alt="Icone de Notificação" class="sinoimg"></a>
+            </div>
+            <a href="../telalogin/index.html"><img src="imagens/logout.png" alt="Icone de sair" class="sair"></a>
+        </header>
+        <form>
+            <div class="form-section-01">
+                <table class="infoacs" id="cns">
+                    <tr>
+                        <caption>CNS DO PROFISSIONAL</caption>
+                        <tr>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>7</td>
+                        </tr>
+                    </tr>
+                </table>
+
+                <table class="infoacs" id="cbo">
+                    <tr>
+                        <caption>CBO</caption>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td id="hifen">-</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+
+                <table class="infoacs" id="cnes">
+                        <tr>
+                            <caption>CNES</caption>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>4</td>
+                        </tr>
+                </table>
+                        
+                <table class="infoacs" id="ine">
+                        <tr>
+                            <caption>INE</caption>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+                </table>
+                        
+                <table class="infoacs" id="microarea">
+                        <tr>
+                            <caption>MICROÁREA</caption>
+                            <td>0</td>
+                            <td>2</td>
+                        </tr>
+                </table>
+
+                <table class="infoacs" id="datacadastro">
+                    <tr>
+                        <caption>DATA DO CADASTRO <div class="asc">*</div></caption>
+                        <td style="border: none; font-size: 1.08em;">23/07/2024</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="form-section-one">
+                <label for="nome">NOME <div class="asc">*</div></label>
+                <input type="text" id="nome" required placeholder="Ex.: João da Silva" value="Antônio Santiago Ferreira">
+                <p>Digite o nome completo</p>
+
+                <label for="data-nascimento">DATA DE NASCIMENTO <div class="asc">*</div></label>
+                <input type="text" id="data-nascimento" required placeholder="Ex.:DD/MM/AAAA" value="23/12/1962">
+                <p>Digite a data de nascimento</p>
+
+                <label for="cpf">CPF <div class="asc">*</div></label>
+                <input type="text" id="cpf" required placeholder="Ex.:123.456.789-09" value="098.763.278-01">
+                <p>Digite o CPF &#40Cadastro de Pessoa Física&#41</p>
+
+                <label for="mae">NOME DA MÃE <div class="asc">*</div></label>
+                <input type="text" id="mae" placeholder="Ex.: Maria da Silva" value="Lindalva Santiago Ferreira">
+                <p>Digite o nome completo da mãe</p>
+
+                <label for="isexo" style="margin-bottom: -15px;">SEXO</label>
+                <select name="sexo" id="isexo">
+                    <option value="">Selecione</option>
+                    <option value="MASC" selected>Masculino</option>
+                    <option value="FEM">Feminino</option>
+                </select>
+
+            </div>
+            <div class="form-section-two">
+                <label for="isus">CARTÃO DO SUS</label>
+                <input type="text" id="isus" placeholder="Ex.: 999 9999 9999 9999" value="786 5479 9897 0210">
+                <p>Digite o número do cartão do SUS</p>
+
+
+                <label for="itel">TELEFONE <div class="asc">*</div></label>
+                <input type="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="Ex.: (99)99999-9999" value="(62) 97743-3434">
+                <p>Digite o número de telefone</p>
+
+                <label for="imail">E-MAIL</label>
+                <input type="text" id="imail" placeholder="Ex.: joaodasilva@gmail.com" value="">
+                <p>Digite o email</p>
+
+                <p id="campo-endereco">Endereço</p>
+
+                <div class="form-section-three">
+                        <div id="cep">
+                            <label for="icep">CEP</label>
+                            <input type="text" id="cep" pattern="^\d{5}-\d{3}$" placeholder="Ex.: 12345-678" value="74932560">
+                        </div>
+                        <div id="ibairro">
+                            <label for="ibairro">BAIRRO</label>
+                            <input type="text" id="ibairro" placeholder="Ex.: Bela Vista" value="Garavelo Residencial Park">
+                        </div>
+                        <div id="irua">
+                            <label for="irua">RUA</label>
+                            <input type="text" id="irua" placeholder="Ex.: Av. Brasil" value="35 E">
+                        </div>
+                        <div id="inum">
+                            <label for="inum">NÚMERO</label>
+                            <input type="number" id="inum" placeholder="Ex.: 99" value="115">
+                        </div>
+                        <div id="complemento">
+                            <label for="icomplemento">COMPLEMENTO</label>
+                            <input type="text" id="icomplemento" placeholder="Ex.: Apto,casa...">
+                        </div>
+                </div>
+            </div>
+            <div class="div-factors">
+                <h3>Fatores de Risco para Câncer de Boca</h3>
+                <div class="form-section risk-factors">
+                    <div>
+                        <label class="borda">Homem <div class="asc">*</div> &#40consome cigarro regurlamente&#41</label>
+                        <div class="radio-group">
+                            <p>Marque sim ou não: </p>
+                            <label class="label1"><input type="radio" name="tipo1" id="sim1" checked><span>Sim</span></label>
+                            <label class="label2"><input type="radio" name="tipo1" id="nao1"><span>Não</span></label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="borda">Etilista <div class="asc">*</div> &#40consome álcool regurlamente&#41</label>
+                        <div class="radio-group">
+                            <p>Marque sim ou não: </p>
+                            <label class="label1"><input type="radio" name="tipo2" id="sim2" checked><span>Sim</span></label>
+                            <label class="label2"><input type="radio" name="tipo2" id="nao2" ><span>Não</span></label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="borda">Tabagista <div class="asc">*</div> &#40consome cigarro regurlamente&#41</label>
+                        <div class="radio-group">
+                            <p>Marque sim ou não: </p>
+                            <label class="label1"><input type="radio" name="tipo3" id="sim3" checked><span>Sim</span></label>
+                            <label class="label2"><input type="radio" name="tipo3" id="nao3"><span>Não</span></label>
+                        </div>
+                    </div>
+                <div>
+                    <label class="borda">Com lesão bucal suspeita <div class="asc">*</div></label>
+                    <div class="radio-group">
+                        <p>Marque sim ou não: </p>
+                        <label class="label1"><input type="radio" name="tipo4" id="sim4" checked><span>Sim</span></label>
+                        <label class="label2"><input type="radio" name="tipo4" id="nao4" ><span>Não</span></label>
+                    </div>
+                </div>
+                <div class="risk-level">
+                    <label>Grau de Risco para Câncer de Boca</label>
+                    <div class="risk-status">Baixo Risco</div>
+                </div>
+            </div>
+            </div>
+        </form>
+            <div class="botoes">
+                <div class="form-section-voltar">
+                    <button type="submit">Voltar</button>
+                </div>
+                <div class="form-section-obrigatorio">
+                    <p>Os itens assinalados com <span class="asc">*</span> são de preenchimento obrigatório</p>
+                </div>
+                <div class="form-section-download">
+                    <img src="imagens/download.png" alt="Icone de Download">
+                </div>
+                <div class="form-section-validar-tel">
+                    <button type="submit">Validar o Telefone</button>
+                </div>
+                <div class="form-section-confirmar">
+                    <button type="submit">Confirmar</button>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
