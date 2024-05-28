@@ -660,9 +660,4 @@ input:checked + span {
     background: #DE4242;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.452);
 
-@media (max-width: 1024px) {
-    .form-section {
-        width: 80%;
-    }
-}
 }
