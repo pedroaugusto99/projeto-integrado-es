@@ -46,7 +46,6 @@ header{
 .posicionar{
     display: block;
     margin-left: 1%;
-    width: 80px;
 }
 
 .titulo{
@@ -54,7 +53,7 @@ header{
     position: absolute;
     font-family: "Inter";
     margin-top: 0.5%;
-    left: 15%;
+    left: 12%;
     color: white;
     font-weight: 600;
 }
@@ -64,8 +63,8 @@ header{
     position: absolute;
     font-family: "Inter";
     color: white;
-    margin-top: 0.8%;
-    left: 55%;
+    margin-top: 1%;
+    left: 42%;
     font-weight: 600;
 }
 
@@ -76,7 +75,7 @@ header{
     border-radius: 8px;
     height: 6.5%;
     width: 13%;
-    top: 2%;
+    top: 2.8%;
     left: 80%;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.226);
 }
@@ -122,7 +121,7 @@ header{
     left: 60%;
     top: 25%;
     width: 30px;
-    transform: translateX(3700%);
+    transform: translateX(3680%);
 }
 /*
 header > img{
@@ -473,7 +472,7 @@ caption {
 
 .risk-status {
     display: inline-block;
-    background-color: #ffcf7f;
+    background-color: white;
     color: black;
     padding: 12px 17px;
     border-radius: 10px;
