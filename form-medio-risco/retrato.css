@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 835px) {
+  
+    body,.container{
+      height: 100%;
+    }
+  
+    body, .container, header {
+        max-width: 100%;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+    }
+  
+    .titulo {
+        font-size: 1.6em;
+        margin-left: 20px;
+    }
+
+    .subtitulo {
+        font-size: 1.2em;
+        padding-left: 35px;
+    }
+
+    .posicionar {
+        width: 119px;
+        height: 76px;
+    }
+
+    #caixausuario {
+        margin-left: -60px;
+        margin-top: -0.6%;
+        width: 160px;
+        height: 60px;
+        text-align: center;
+    }
+
+    .usuario {
+        width: 35px;
+        height: 35px;
+    }
+
+    .caixa {
+        font-size: 1em;
+        left: 120px;
+        margin-top: 5px;
+    }
+
+    .sinoimg {
+        margin-top: 7px;
+    }
+
+    .sair {
+      margin-left: -225px;
+    }
+
+
+    .form-section-01 {
+        max-width: 100%;
+        font-size: 0.9em;
+        overflow-x: auto;
+        text-align: center;
+    }
+
+    .form-section-01 > table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    
+    .form-section-01 > #cns {
+      border-radius: 10px 0px 0px 0px;
+      width: 400px;
+    }
+    
+    .form-section-01 > #cbo {
+    border-radius: 0;
+    width: 160px;
+    }
+
+    .form-section-01 > #cnes {
+    border-radius: 0px 10px 0px 0px;
+    width: 170px;
+    }
+
+    .form-section-01 > #ine {
+    border-radius: 0px 0px 0px 10px;
+    width: 300px;
+    }
+
+    .form-section-01 > #microarea {
+    border-radius: 0px 0px 0px 0px;
+    width: 150px;
+    }
+
+    .form-section-01 > #datacadastro {
+    border-radius: 0px 0px 10px 0px;
+    width: 280px;
+    height: 49px;
+    text-align: center;
+    }
+
+    #datacadastro td {
+      width: 5%;
+    }
+
+    .form-section-one {
+      float: center;
+      width: 50%;
+      margin: auto;
+      height: 50%;
+      padding: 10px;
+      display: block;
+      font-size: 1.5em;
+    }
+    
+    .form-section-one label {
+      margin-top: 10px;
+    }
+    
+    .form-section-two{
+      float: center;
+      width: 50%;
+      height: 50%;
+      padding: 10px;
+      display: inline-block;
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+    
+    .form-section-three {
+      display: block;
+      width: 100%;
+      height: 100%;
+      float: inline-start;
+      font-size: 1.15em;
+    }
+
+    #campo-endereco {
+      margin-top: 15px;
+      font-size: 1em;
+    }
+    
+    .form-section-three > #cep {
+      width: 100px;
+    }
+
+    #cep {
+      width: 100px;
+    }
+    
+    #ibairro {
+      width: 130px;
+    }
+
+    #irua {
+      width: 100px;
+    }
+
+    #inum {
+      width: 70px;
+      margin-right: 66px;
+    }
+
+    #icomplemento {
+      width: 150px;
+    }
+    
+    .risk-factors {
+      width: 750px;
+      height: 100%;
+      margin: auto;
+      float: unset;
+      display: block;
+      margin-top: 65px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    .div-factors > h3 {
+      position: absolute;
+      transform: translateY(47vh);
+      left: 22%;
+      font-size: 1.5em;
+    }
+    
+    .risk-factors label {
+      width: 700px;
+      font-size: 1.3em;
+    }
+
+    .label1{
+      left: 15vw;
+    }
+  
+    .label1 input{
+     
+    }
+  
+    .label1 span{
+      font-size: 1.2em;
+      height: 30px;
+      width: 8vw;
+    }
+
+    .label2{
+      left: 22vw;
+    }
+  
+    .label2 input{
+     
+    }
+  
+    .label2 span{
+      font-size: 1.2em;
+      height: 30px;
+      width: 8vw;
+    }
+
+    .risk-level {
+      margin-left: -15px;
+    }
+
+    .botoes {
+      height: 60px;
+    }
+
+    .form-section-voltar > [type="submit"] {
+      font-size: 1em;
+      margin-left: 5px;
+    }
+
+    .form-section-obrigatorio {
+      width: 210px;
+      margin-left: 50px;
+      margin-top: 2px;
+    }
+
+    .form-section-download {
+      margin-left: 20px;
+    }
+
+    .form-section-validar-tel > [type="submit"] {
+      font-size: 1em;
+      margin-right: 5px;
+    }
+
+    .form-section-confirmar > [type="submit"] {
+      font-size: 1em;
+    }
+
+  }
