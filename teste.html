@@ -28,7 +28,7 @@ p{
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: white;
     height: 100vh;
     width: 100vw;
 }
@@ -193,16 +193,11 @@ caption {
     margin-left: 1vw;
     }
 
-.form-1 label {
-    display: block;
-    font-weight: bold;
-}
-
 .form-1 label{
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     display: block;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     padding-top: 10px;
     color: gray;
 }
@@ -210,7 +205,7 @@ caption {
 .form-1 > p {
     padding-bottom: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     }
 
 .form-1 input,
@@ -259,9 +254,9 @@ caption {
 .form-2 label{
     font-weight: bold;
     max-width: 30vw;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     padding-top: 10px;
     color: gray;
 }
@@ -269,7 +264,7 @@ caption {
 .form-2 > p {
     padding-bottom: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .form-2 input,
@@ -285,15 +280,15 @@ caption {
 /* Endereço */
 
 .form-2 > h2 {
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: 400;
-    margin-bottom: 2vh;
+    margin-bottom: 0.5vh;
 }
 
 .end1 {
     display: block;
     padding: 2%;
-    margin-bottom: 3.5vh;
+    margin: 0px;
 }
 
 .end2 {
@@ -301,25 +296,35 @@ caption {
     padding: 2%;
 }
 
+.end3 {
+    display: block;
+    padding: 2%;
+}
+
 
 #cep {
     width: 5vw;
+    font-size: 1.2vh;
 }
 
 #ibairro {
-    width: 7vw;
+    width: 10vw;
+    font-size: 1.2vh;
 }
 
 #inum {
-    width: 3vw;
+    width: 6vw;
+    font-size: 1.2vh;
 }
 
 #irua {
-    width: 8vw;
+    width: 12vw;
+    font-size: 1.2vh;
 }
 
 #icomplemento {
-    width: 8vw;
+    width: 15vw;
+    font-size: 1.2vh;
 }
 
 /* Fatores de Risco */
@@ -520,7 +525,8 @@ input:checked + span {
 footer{
     position: fixed;
     bottom: 1%;
-    left: 1%;   
+    left: 1%;
+    display: flex;
 }
 
 .voltar input[type=submit]{
@@ -566,7 +572,7 @@ footer{
     text-align: center;
     padding-left: 15px;
     margin-left: 2.5vw;
-    margin-right: 15vw;
+    margin-right: 7vw;
 }
 
 .validar input[type=submit]{
@@ -602,6 +608,7 @@ footer{
     font-size: 2.8vh;
     text-align: center;
     padding-right: 15px;
+    float: right;
 }
 
 input[type=submit]:hover{
@@ -743,19 +750,21 @@ input[type=submit]:hover{
                 <input type="text" id="imail" placeholder="Ex.: joaodasilva@gmail.com">
                 <p>Digite o email</p>
 
-                <h2>Endereço</h2>
+                 <h2>Endereço</h2>
    
                 <div class="end1">
+                    <label for="irua">RUA:</label>
+                    <input type="text" id="irua" placeholder="Ex.: Av. Brasil">
                     <label for="icep">CEP:</label>
                     <input type="text" id="cep" pattern="^\d{5}-\d{3}$" placeholder="Ex.: 12345-678">
+                </div> 
+                <div class="end2">
                     <label for="ibairro">BAIRRO:</label>
                     <input type="text" id="ibairro" placeholder="Ex.: Bela Vista">
                     <label for="inum">Nº:</label>
                     <input type="number" id="inum" placeholder="Ex.: 99">
-                </div> 
-                <div class="end2">
-                    <label for="irua">RUA:</label>
-                    <input type="text" id="irua" placeholder="Ex.: Av. Brasil">
+                </div>
+                <div class="end3">
                     <label for="icomplemento">COMPLEMENTO:</label>
                     <input type="text" id="icomplemento" placeholder="Ex.: Apto,casa...">
                 </div>
