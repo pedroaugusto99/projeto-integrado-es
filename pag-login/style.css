@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: grid;
+    background-image: linear-gradient(to bottom, #0499ac,white,white);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    place-items: center;
+  }
+
+  .img > img{
+    width: 600px;
+  }
+  
+  .list {
+    display: flex;
+    gap: 0.25rem;
+    transform-style: preserve-3d;
+    list-style-type: none;
+  
+    &:hover :not(:hover) {
+      margin: 0 -20px;
+      transform: perspective(500px) rotateY(45deg) scale(0.95);
+    }
+  
+    &:hover :not(:hover)::after {
+      opacity: 0.4;
+    }
+  }
+  
+  .item {
+    position: relative;
+    width: 120px;
+    aspect-ratio: 3/4;
+    border-radius: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #0499ac;
+    background-position: center;
+    transition: margin 0.5s, transform 0.5s;
+  
+    &:nth-of-type(1) { background-image: url(https://cdn.icon-icons.com/icons2/38/PNG/512/adduser_4961.png); }
+    &:nth-of-type(2) { background-image: url(https://static.vecteezy.com/system/resources/thumbnails/016/314/407/small/map-pointers-and-clipart-with-transparent-background-free-png.png); }
+    &:nth-of-type(3) { background-image: url(https://cdn-icons-png.flaticon.com/512/64/64673.png); }
+    &:nth-of-type(4) { background-image: url(https://cdn-icons-png.flaticon.com/512/2823/2823840.png); }
+    &:nth-of-type(5) { background-image: url(https://cdn-icons-png.flaticon.com/512/3524/3524636.png); }
+  
+    &:hover ~ .item {
+      transform: perspective(500px) rotateY(-45deg) scale(0.95);
+    }
+  
+    &:hover {
+      cursor: pointer;
+      transform: perspective(500px) rotateY(0) scale(1.2);
+    }
+
+    &:nth-of-type(1):hover {
+        background-image: url('imagens/CADASTRAR.svg');
+    }
+
+    &:nth-of-type(2):hover {
+        background-image: url('imagens/monitorar.svg');
+    }
+
+    &:nth-of-type(3):hover {
+        background-image: url('imagens/buscar.svg');
+    }
+
+    &:nth-of-type(4):hover {
+        background-image: url('imagens/central.svg');
+    }
+
+    &:nth-of-type(5):hover {
+        background-image: url('imagens/config.svg');
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      aspect-ratio: inherit;
+      border-radius: inherit;
+      background-color: black;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  }
